@@ -1,0 +1,22 @@
+# data files
+*.csv
+*.parquet
+*.xlsx
+
+# notebook checkpoints
+.ipynb_checkpoints/
+
+# python cache
+__pycache__/
+*.pyc
+
+# models
+models/*.pkl
+models/*.joblib
+
+# system files
+.DS_Store
+
+# virtual env 
+venv/
+.env/
