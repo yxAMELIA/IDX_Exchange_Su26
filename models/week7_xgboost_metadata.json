@@ -1,0 +1,52 @@
+{
+  "model": "XGBRegressor",
+  "feature_set": "Old Features",
+  "training_window_months": 15,
+  "validation_month": "2026-05",
+  "test_month": "2026-06",
+  "best_parameters": {
+    "max_depth": 8,
+    "learning_rate": 0.1,
+    "n_estimators": 200
+  },
+  "numeric_features": [
+    "LivingArea",
+    "BedroomsTotal",
+    "BathroomsTotalInteger",
+    "LotSizeSquareFeet",
+    "PropertyAge",
+    "GarageSpaces",
+    "Stories",
+    "Latitude",
+    "Longitude",
+    "month_sin",
+    "month_cos",
+    "LivingArea_missing",
+    "BathroomsTotalInteger_missing",
+    "LotSizeSquareFeet_missing",
+    "YearBuilt_missing",
+    "GarageSpaces_missing",
+    "Stories_missing"
+  ],
+  "categorical_features": [
+    "City",
+    "PostalCode",
+    "CountyOrParish",
+    "ViewYN",
+    "WaterfrontYN",
+    "BasementYN",
+    "PoolPrivateYN",
+    "AttachedGarageYN",
+    "FireplaceYN",
+    "NewConstructionYN"
+  ],
+  "target_lower_bound": 189000.0,
+  "target_upper_bound": 8800000.0,
+  "test_metrics": {
+    "R2": 0.8719269506075951,
+    "MAE": 189511.45211725263,
+    "RMSE": 354459.779834339,
+    "MAPE": 15.488394437917846,
+    "MdAPE": 10.58893888486286
+  }
+}
