@@ -435,22 +435,6 @@ For Apple Silicon Macs, a native **ARM64 Python environment** is recommended whe
 
 ---
 
-## Limitations
-
-The current application is designed as a demonstration of the end-to-end AVM workflow.
-
-Important limitations include:
-
-- The simplified Streamlit interface collects only four property characteristics.
-- Geographic features such as latitude, longitude, ZIP code, and county are important predictors but are not currently entered by the user.
-- Model performance varies across property price bands.
-- Extremely unusual or sparsely represented properties may produce larger errors.
-- The model estimates market value from historical CRMLS transactions and should not be interpreted as a professional real-estate appraisal.
-
-Future improvements could incorporate additional user-provided location information, neighborhood characteristics, school-quality measures, and more advanced spatial features.
-
----
-
 ## Summary
 
 This project demonstrates a complete machine-learning workflow for residential property valuation, from raw CRMLS transaction data through preprocessing, model development, evaluation, and deployment.
